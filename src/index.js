@@ -10,8 +10,8 @@ import PageNotFound from './page-not-found';
 const routing = (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/students-list" component={ListStudents} />
-            <Route exact path="/" component={App} />
+            <Route path="/students-list" component={ListStudents} />
+            <Route path="/" component={App} />
             <Route path="*" component={PageNotFound} />
         </Switch>
     </BrowserRouter>

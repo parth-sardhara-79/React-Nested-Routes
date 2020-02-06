@@ -50,7 +50,6 @@ class ListStudents extends React.Component {
                 <hr />
                 <Route  path="/students-list/:id/student-marks" component={StudentMarks} />
                 <Route  path="/students-list/:id/student-details" component={StudentDetails} />
-                <Route path="*" component={PageNotFound}/>
             </div>);
     }
 }
