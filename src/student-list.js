@@ -3,7 +3,8 @@ import data from './students_data.json';
 import { Table, Button } from 'react-bootstrap';
 import { Route } from 'react-router-dom';
 import StudentMarks from './student-marks';
-import StudentDetails from './student-details'
+import StudentDetails from './student-details';
+import PageNotFound from './page-not-found';
 class ListStudents extends React.Component {
     render() {
 
@@ -47,8 +48,9 @@ class ListStudents extends React.Component {
                     }
                 </Table>
                 <hr />
-                <Route path="/students-list/:id/student-marks" component={StudentMarks} />
-                <Route path="/students-list/:id/student-details" component={StudentDetails} />
+                <Route  path="/students-list/:id/student-marks" component={StudentMarks} />
+                <Route  path="/students-list/:id/student-details" component={StudentDetails} />
+                <Route path="*" component={PageNotFound}/>
             </div>);
     }
 }

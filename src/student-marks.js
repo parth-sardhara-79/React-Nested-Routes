@@ -11,7 +11,7 @@ class StudentMarks extends React.Component{
         if (d.id == id)
             return d
     })
-    let { first_name, last_name,maths, science, history, english  } = student[0];
+    let { first_name, last_name ,maths, science, history, english  } = student[0];
     return (<div className="mx-auto w-50">
         <Card>
             <Card.Title>
