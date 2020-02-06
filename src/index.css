@@ -14,7 +14,19 @@ code {
 
 .card{
   padding: 5px;
-  margin-top: 10px;
   border: 2px black solid !important;
   box-shadow: 5px 5px black !important;
+  margin-bottom: 30px !important;
+}
+.studentList{
+  padding: 30px;
+  border: 2px black solid;
+}
+hr{
+  display: block !important;
+  border-width: 2px !important;
+  border-color: black !important ;
+} 
+.btnCenter{
+  text-align: center;
 }

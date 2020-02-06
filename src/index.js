@@ -3,16 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter,y Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ListStudents from './student-list';
-
 const routing = (
     <BrowserRouter>
         <Switch>
-           
             <Route path="/students-list" component={ListStudents} />
-
             <Route path="/" component={App} />
         </Switch>
     </BrowserRouter>

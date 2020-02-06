@@ -11,7 +11,7 @@ class StudentDetails extends React.Component {
                 return d
         })
         let { first_name, last_name, DOB, father, mother, email, standard, gender } = student[0];
-        return (<div className="mx-auto w-50 studentDetails">
+        return (<div className="mx-auto w-50">
             <Card>
                 <Card.Title>
                     Student Details
