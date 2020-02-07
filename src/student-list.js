@@ -48,8 +48,8 @@ class ListStudents extends React.Component {
                     }
                 </Table>
                 <hr />
-                <Route  path="/students-list/:id/student-marks" component={StudentMarks} />
-                <Route  path="/students-list/:id/student-details" component={StudentDetails} />
+                <Route  exact path="/students-list/:id/student-marks" component={StudentMarks} />
+                <Route  exact path="/students-list/:id/student-details" component={StudentDetails} />
             </div>);
     }
 }
