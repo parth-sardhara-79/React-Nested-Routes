@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 class App extends React.Component {
   render() {
     return (<>
-      <Redirect to="/students-list"/>
+      <Redirect to="/students-list" />
     </>);
   }
 }
