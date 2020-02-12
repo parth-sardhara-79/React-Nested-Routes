@@ -10,9 +10,9 @@ import PageNotFound from './page-not-found';
 const routing = (
   <BrowserRouter>
     <Switch>
+      <Route exact path="/" render={() => <Redirect to="/students-list" />} />
       <Route path="/students-list/:id/" component={ListStudents} />
       <Route path="/students-list" component={ListStudents} />
-      <Route exact path="/" render={() => <Redirect to="/students-list" />} />
       <Route component={PageNotFound} />
     </Switch>
   </BrowserRouter>
